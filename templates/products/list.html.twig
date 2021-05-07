@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>SimpleStock</h1>
+    <a href="/add-product">Ajouter un produit</a>
+    {% for product in products %}
+        <h2>Produit : {{ product.name }} <br>Quantité : {{ product.quantity }}</h2>
+    {% endfor %}
+{% endblock %}
